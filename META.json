@@ -1,0 +1,73 @@
+{
+   "abstract" : "Translates output of Apache HTTP server by mod_perl2 and WOVN.io.",
+   "author" : [
+      "Masahiro Iuchi <masahiro.iuchi@gmail.com>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Minilla/v3.0.1, CPAN::Meta::Converter version 2.150001",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Apache2-Filter-WOVN",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "xt",
+         "inc",
+         "share",
+         "eg",
+         "examples",
+         "author",
+         "builder"
+      ]
+   },
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "Module::Build::Tiny" : "0.035"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Test::CPAN::Meta" : "0",
+            "Test::MinimumVersion::Fast" : "0.04",
+            "Test::PAUSE::Permissions" : "0.04",
+            "Test::Pod" : "1.41",
+            "Test::Spellunker" : "v0.2.7"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "APR::Table" : "0",
+            "Apache2::Const" : "0",
+            "Apache2::Filter" : "0",
+            "Apache2::ServerRec" : "0",
+            "Plack::Middleware::WOVN" : "0",
+            "perl" : "5.010"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Test::More" : "0.98"
+         }
+      }
+   },
+   "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/masiuchi/p5-Apache2-Filter-WOVN/issues"
+      },
+      "homepage" : "https://github.com/masiuchi/p5-Apache2-Filter-WOVN",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/masiuchi/p5-Apache2-Filter-WOVN.git",
+         "web" : "https://github.com/masiuchi/p5-Apache2-Filter-WOVN"
+      }
+   },
+   "version" : "0.01",
+   "x_authority" : "cpan:MASIUCHI"
+}
