@@ -4,6 +4,7 @@ use strict;
 use warnings;
 
 use Apache2::ServerRec  ();
+use Apache2::ServerUtil ();
 use Apache2::Const -compile => qw( DECLINED );
 
 use Plack::Middleware::WOVN::Store;
