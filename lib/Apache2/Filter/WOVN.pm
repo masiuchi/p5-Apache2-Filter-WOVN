@@ -14,7 +14,7 @@ __END__
 
 =head1 NAME
 
-Apache::Filter2::WOVN - Translates output of Apache HTTP server by mod_perl2 and WOVN.io.
+Apache2::Filter::WOVN - Translates output of Apache HTTP server by mod_perl2 and WOVN.io.
 
 =head1 SYNOPSIS
 

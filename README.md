@@ -1,6 +1,6 @@
 # NAME
 
-Apache::Filter2::WOVN - Translates output of Apache HTTP server by mod\_perl2 and WOVN.io.
+Apache2::Filter::WOVN - Translates output of Apache HTTP server by mod\_perl2 and WOVN.io.
 
 # SYNOPSIS
 
