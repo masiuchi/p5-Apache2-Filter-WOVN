@@ -22,9 +22,10 @@ Apache2::Filter::WOVN - Translates output of Apache HTTP server by mod_perl2 and
   PerlTransHandler        Apache2::Filter::WOVN::Trans
   PerlOutputFilterHandler Apache2::Filter::WOVN::OutputFilter
 
-  PerlSetVar wovn_user_token  IRb6-
-  PerlSetVar wovn_secret_key  secret
-  PerlSetVar wovn_url_pattern path
+  PerlSetVar wovn_user_token   IRb6-
+  PerlSetVar wovn_secret_key   secret
+  PerlSetVar wovn_url_pattern  path
+  PerlSetVar wovn_default_lang ja
 
   # PerlSwitches -I/home/username/p5-Apache2-Filter-WOVN/lib
 
