@@ -42,12 +42,8 @@
       },
       "runtime" : {
          "requires" : {
-            "APR::Table" : "0",
-            "Apache2::Const" : "0",
-            "Apache2::Filter" : "0",
-            "Apache2::ServerRec" : "0",
-            "Apache2::ServerUtil" : "0",
             "Plack::Middleware::WOVN" : "0",
+            "mod_perl2" : "0",
             "perl" : "5.010"
          }
       },
