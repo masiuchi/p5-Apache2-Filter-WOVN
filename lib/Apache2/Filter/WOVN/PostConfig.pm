@@ -5,7 +5,7 @@ use warnings;
 
 use Apache2::ServerRec  ();
 use Apache2::ServerUtil ();
-use Apache2::Const -compile => qw( DECLINED );
+use Apache2::Const -compile => qw( OK );
 
 use Plack::Middleware::WOVN::Store;
 
@@ -15,7 +15,7 @@ sub handler {
     my ( $conf_pool, $log_pool, $temp_pool, $s ) = @_;
 
     if ($Apache2::Filter::WOVN::Store) {
-        return Apache2::Const::DECLINED;
+        return Apache2::Const::OK;
     }
 
     my $user_token   = $s->dir_config('wovn_user_token');
@@ -33,7 +33,7 @@ sub handler {
     $Apache2::Filter::WOVN::STORE
         = Plack::Middleware::WOVN::Store->new( { settings => $settings } );
 
-    return Apache2::Const::DECLINED;
+    return Apache2::Const::OK;
 }
 
 1;
