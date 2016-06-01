@@ -39,8 +39,10 @@ sub handler {
     }
 
     $Plack::Middleware::WOVN::STORE = $Apache2::Filter::WOVN::STORE;
-    $body = Plack::Middleware::WOVN::switch_lang( $body, $values, $url,
-        $Apache2::Filter::WOVN::LANG, $Apache2::Filter::WOVN::HEADERS );
+    $body                           = eval {
+        Plack::Middleware::WOVN::switch_lang( $body, $values, $url,
+            $Apache2::Filter::WOVN::LANG, $Apache2::Filter::WOVN::HEADERS );
+    } || $body;
 
     $f->print($body);
     return Apache2::Const::DECLINED;
